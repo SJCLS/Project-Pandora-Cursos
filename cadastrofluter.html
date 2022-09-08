@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>cadastrofluter</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="cadastrofluter.html">voltar ao topo!</a></h1>
+			<nav>
+				<a href="#menu">Cursos</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="fluter.html">fluter</a></li>
+					<li><a href="python.html">PYTHON</a></li>
+					<li><a href="docker.html">DOCKER</a></li>
+					<li><a href="gamemaker.html">GAMEMAKER</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>cadastre-se</h2>
+					<p>Aprenda na prática a criar um App completo de loja virtual,
+						incluindo pagamentos por Pix. Use todo o potencial do GetX!</p>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+					<section>
+						<h3 class="major">Realize seu Cadastro aqui !</h3>
+						<form method="post" action="https://63155dd333e540a6d37be0ac.mockapi.io/usuarios">
+							<div class="col-12">
+								<label for="curso">Escolha seu curso</label>
+								<select name="curso" id="curso" value="" required>
+
+									<option value="">-</option>
+									<option value="FLUTER">FLUTER - Crie um App de Quitanda Virtual com Flutter + GetX -2022</option>
+									<option value="PYTHON">PYTHON - Formação Profissional Python 2022: Curso Completo+Projetos</option>
+									<option value="DOCKER">DOCKER - Docker Completo do ZERO ao Avançado 2022</option>
+									<option value="GAMEMAKER">GAMEMAKER - Criando Jogos Digitais com GameMaker Studio 2</option>
+
+								</select>
+								<div>
+									<p></p>
+								</div>
+							</div>
+
+							<div class="row gtr-uniform">
+								<div class="col-4 col-12-xsmall">
+									<label for="ValorCurso">Valor do Curso </label>
+									<select name="ValorCurso" id="ValorCurso" value="" required>
+										<option value="">-</option>
+										<option value="1.987,00">R$ 1.987,00</option>
+										<option value="2.212,00">R$ 2.212,00</option>
+										<option value="1.530,00">R$ 1.530,00</option>
+										<option value="1.712,00">R$ 1.712,00</option>
+									</select>
+								</div>
+							</div>
+
+							<div>
+								<p>
+								<h3 class="major">Dados Pessoais:</h3>
+								</p>
+							</div>
+
+							<div class="row gtr-uniform">
+								<div class="col-6 col-12-xsmall">
+									<label for="NomeAluno">Nome Completo*</label>
+									<input type="text" name="NomeAluno" id="NomeAluno" value="" required />
+								</div>
+
+								<div class="col-6 col-12-xsmall">
+									<label for="EmailAluno">Email*</label>
+									<input type="email" name="EmailAluno" id="EmailAluno" value="" required />
+								</div>
+
+								<div class="col-4 col-12-xsmall">
+									<label for="CelularAluno">Celular*</label>
+									<input type="tel" name="CelularAluno" id="CelularAluno" value="" 
+									pattern="[0-9]{5}-[0-9]{3}"title="Digite o CEP no formato:99999-999" required />
+								</div>
+
+								<div class="col-4 col-12-xsmall">
+									<label for="TelefoneAluno">Telefone</label>
+									<input type="tel" name="TelefoneAluno" id="TelefoneAluno" value=""
+									pattern="[0-9]{5}-[0-9]{3}"title="Digite o CEP no formato:99999-999" required />
+								</div>
+
+								<div class="col-4 col-12-xsmall">
+									<label for="NascAluno">Data de Nascimento</label>
+									<input type="date" name="NascAluno" id="NascAluno" value="" min="1990-01-05" max="2022-12-31" />
+								</div>
+
+								<div class="col-2 col-12-small">
+									<label for="CorDaPele">Cor</label>
+								</div>
+
+								<div class="col-2 col-12-small">
+									<input type="radio" id="Branca" name="CorDaPele"  value="Branca" checked>
+									<label for="Branca">Branca</label>
+								</div>
+
+								<div class="col-2 col-12-small">
+									<input type="radio" id="Preta" name="CorDaPele" value="Preta">
+									<label for="Preta">Preta</label>
+								</div>
+
+								<div class="col- col-12-small">
+									<input type="radio" id="Parda" name="CorDaPele" value="Parda">
+									<label for="Parda">Parda</label>
+								</div>
+
+								<div class="col-2 col-12-small">
+									<input type="radio" id="Amarela" name="CorDaPele" value="Amarela">
+									<label for="Amarela">Amarela</label>
+								</div>
+
+								<div class="col-2 col-12-small">
+									<input type="radio" id="Indígena" name="CorDaPele" value="Indígena">
+									<label for="Indígena">Indígena</label>
+								</div>
+
+								<div class="col-12">
+									<p>
+									<h3 class="major">Endereço:</h3>
+									</p>
+								</div>
+								
+								<div class="row gtr-uniform">
+									
+									<div class="col-6 col-12-xsmall">
+										<label for="estado">Estado*</label>
+										<input type="text" name="estado" id="estado" value="" required />
+									</div>
+
+									<div class="col-6 col-12-xsmall">
+										<label for="Cidade">Cidade*</label>
+										<input type="text" name="Cidade" id="Cidade" value="" required />
+									</div>
+
+									<div class="col-6 col-12-xsmall">
+										<label for="bairro">Bairro*</label>
+										<input type="text" name="bairro" id="bairro" value="" required />
+									</div>
+
+									<div class="col-3 col-12-xsmall">
+										<label for="cep">cep*</label>
+										<input type="text" name="cep" id="cep" value=""pattern="[0-9]{5}-[0-9]{3}"
+										title="Digite o CEP no formato:99999-999" required />
+									</div>
+
+									<div class="col-3 col-12-xsmall">
+										<label for="Numero">Numero*</label>
+										<input type="text" name="Numero" id="Numero" value="" required />
+									</div>
+
+									<div class="col-8 col-12-xsmall">
+										<label for="demo-name">Rua*</label>
+										<input type="text" name="Rua" id="Rua" value="" required />
+									</div>
+
+									<div class="col-12 col-12-xsmal">
+										<p><h3 class="major">Dados do responsável :</h3></p>
+									</div>
+
+									<div class="col-12">
+										<label for="EscolhaResponsavel">Escolha o responsável</label>
+										<select name="EscolhaResponsavel" id="EscolhaResponsavel" value="" required>
+											<option value="">-</option>
+											<option value="Pai">Pai</option>
+											<option value="Mãe">Mãe</option>
+											<option value="Avô">Avô</option>
+											<option value="Avó">Avó</option>
+											<option value="Tio">Tio</option>
+											<option value="Tia">Tia</option>
+											<option value="Não familiar">Não familiar</option>
+										</select>
+									</div>
+
+									<div class="col-8 col-12-xsmall">
+										<label for="NomeResposavel">Nome Completo*</label>
+										<input type="text" name="NomeResposavel" id="NomeResposavel" value="" required />
+									</div>
+
+									<div class="col-4 col-12-xsmall">
+										<label for="NascResponsavel">Data de Nascimento</label>
+										<input type="date" name="NascResponsavel" id="NascResponsavel" value="" />
+									</div>
+
+									<div class="col-3 col-12-xsmall">
+										<label for="naturalidadeResposavel">Naturalidade</label>
+										<input type="text" name="naturalidadeResposavel" id="naturalidadeResposavel" value="" required />
+									</div>
+
+									<div class="col-4 col-12-xsmall">
+										<label for="instrucao">instrução</label>
+										<input type="text" name="instrucao" id="instrucao" value="" required />
+									</div>
+
+									<div class="col-5 col-12-xsmall">
+										<label for="ProfissaoResposavel">profissão</label>
+										<input type="text" name="ProfissaoResposavel" id="ProfissaoResposavel" value="" required />
+									</div>
+
+									<div class="col-3 col-12-xsmall">
+										<label for="CelularResponsavel">Celular*</label>
+										<input type="tel" name="CelularResponsavel" id="CelularResponsavel" value="" 
+										pattern="[0-9]{5}-[0-9]{3}"title="Digite o CEP no formato:99999-999" required />
+									</div>
+
+									<div class="col-6 col-12-xsmall">
+										<label for="EmailResponsavel">Email*</label>
+										<input type="email" name="EmailResponsavel" id="EmailResponsavel" value="" required />
+									</div>
+
+									<div class="col-3 col-12-xsmall">
+										<label for="CpfResponsavel">cpf*</label>
+										<input type="text" name="CpfResponsavel" id="CpfResponsavel" value="" 
+										pattern="[0-9]{5}-[0-9]{3}"title="Digite o CEP no formato:99999-999"required />
+									</div>
+
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Salvar" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+
+								</div>
+						</form>
+					</section>
+				</div>
+			</div>
+
+		</section>
+	</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
